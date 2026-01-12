@@ -446,17 +446,7 @@ end
 ## Best Practices
 
 1. **Register keys in shared code** - Ensure keys are registered on both server and client before accessing them
-
 2. **Use type-safe getters** - Prefer `getBoolean()` and `getNumber()` over `getValue()` when the type is known
-
 3. **Handle loading state** - Check `isLoaded()` before accessing config on the client, especially during startup
-
 4. **Test with overrides** - Use `setPlayerOverride()` to test different config values without changing ConfigService
-
 5. **Return `nil` from eligibility evaluators** - When player data isn't loaded yet, return `nil` to defer evaluation
-
----
-
-## License
-
-MIT
